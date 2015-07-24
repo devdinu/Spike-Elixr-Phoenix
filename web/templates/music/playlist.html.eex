@@ -1,14 +1,13 @@
 <div class="jumbotron">
-	<h3>List of Musics available... </h3>
+	<h3>Top Playlist... </h3>
 	
 	<table>
-		<%= for song <- get_list() do %>
+		<%= for song <- @songs do %>
 		<tr>
 			<td><%= song.name %></td>
 			<td><%= song.votes %></td>
-
 			<td class="text-right">
-				<%= #link "/vote", to: song_path(@conn, :delete, song), method: :delete, class: "btn btn-danger btn-xs" %>
+			<%= # link "/vote", to: song_path(@conn, :delete, song), method: :delete, class: "btn btn-danger btn-xs" %>
 			</td>
 		</tr>
 		<% end %>

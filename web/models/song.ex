@@ -22,4 +22,10 @@ defmodule Sample.Song do
     model
     |> cast(params, @required_fields, @optional_fields)
   end
+  
+  def vote(model) do
+    # model.votes = 100
+    model
+  end
+
 end

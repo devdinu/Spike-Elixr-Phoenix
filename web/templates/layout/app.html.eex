@@ -23,9 +23,8 @@
       <div>
         <ul class="nav nav-tabs">
           <li role="presentation"><a href="/">Home</a></li>
-          <li role="presentation"><a href="/music">Music</a></li>
-          <li role="presentation"><a href="#">Vote</a></li>
-          <li role="presentation"><a href="#">Playlist</a></li>
+          <li role="presentation"><a href="/music">Playlist</a></li>
+          <li role="presentation"><a href="/votedsongs">Vote</a></li>
           <li role="presentation"><a href="/song">Songs</a></li>
         </ul>
       </div>

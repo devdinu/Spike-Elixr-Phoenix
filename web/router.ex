@@ -16,8 +16,9 @@ defmodule Sample.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    # get "/musics", MusicController, :index
-    get "/music", MusicController, :index
+    get "/votedsongs", MusicController, :voted_songs
+    # put "/vote", MusicController, :update
+    resources "music", MusicController, only: [:index, :update]
     resources "song", SongController
   end
 

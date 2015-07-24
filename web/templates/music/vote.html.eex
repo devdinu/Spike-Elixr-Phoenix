@@ -1,0 +1,15 @@
+<div class="jumbotron">
+	<table>
+		<%= for song <- @topsongs do %>
+		<tr>
+			<td><h4><%= song.name %></h4></td>
+			<td><h3><%= song.votes %></h3></td>
+			<td class="text-right">
+				<%= link "vote", to: music_path(@conn, :update, song), method: :put, class: "btn btn-primary btn-xs" %>
+			</td>
+		</tr>
+		<% end %>
+	</table>
+</div>
+
+
