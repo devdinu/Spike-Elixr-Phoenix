@@ -1,0 +1,17 @@
+<h2>Show song</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @song.name %>
+  </li>
+
+  <li>
+    <strong>Size:</strong>
+    <%= @song.size %>
+  </li>
+
+</ul>
+
+<%= link "Back", to: song_path(@conn, :index) %>

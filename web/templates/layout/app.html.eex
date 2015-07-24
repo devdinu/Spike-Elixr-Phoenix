@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Your Choice!</title>
+  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  <script>require("web/static/js/app")</script>
+
+</head>
+
+<body>
+
+  <div class="container" role="main">
+    <div class="header">
+      <div>
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="/">Home</a></li>
+          <li role="presentation"><a href="/music">Music</a></li>
+          <li role="presentation"><a href="#">Vote</a></li>
+          <li role="presentation"><a href="#">Playlist</a></li>
+        </ul>
+      </div>
+      <span class="logo"></span>
+    </div>
+
+    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+    <%= @inner %>
+
+  </div> <!-- /container -->
+
+</body>
+</html>
