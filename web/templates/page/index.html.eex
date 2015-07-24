@@ -1,4 +1,6 @@
 <div class="jumbotron">
-  <h2>Sample Phoenix Application!</h2>
-  <p class="lead">Most web frameworks make you choose between speed and a productive environment. <a href="http://phoenixframework.org">Phoenix</a> and <a href="http://elixir-lang.org">Elixir</a> give you both.</p>
+  <h2>Play For You!</h2>
+  <p class="lead">Choose Your Choice, and Vote For it. 
+  <a href="/music">Choose</a> and 
+  <a href="/vote">Vote</a> give you both.</p>
 </div>

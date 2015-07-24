@@ -5,9 +5,12 @@ defmodule Sample.SongController do
 
   plug :scrub_params, "song" when action in [:create, :update]
 
-  def index(conn, _params) do
+  def get_songs() do
     songs = Repo.all(Song)
-    render(conn, "index.html", songs: songs)
+  end
+
+  def index(conn, _params) do
+    render(conn, "index.html", songs: get_songs())
   end
 
   def new(conn, _params) do

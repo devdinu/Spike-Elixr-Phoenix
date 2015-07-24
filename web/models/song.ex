@@ -4,12 +4,13 @@ defmodule Sample.Song do
   schema "songs" do
     field :name, :string
     field :size, :integer
+    field :votes, :integer
 
     timestamps
   end
 
   @required_fields ~w(name size)
-  @optional_fields ~w()
+  @optional_fields ~w(votes)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
